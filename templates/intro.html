@@ -12,17 +12,17 @@
     <title data-l10n-id="title">Pontoon Intro</title>
 
     <!-- Enable internationalization with l10n.js -->
-    <link href="locales/locales.ini" rel="prefetch" type="application/l10n">
-    <script src="js/l10n.js"></script>
+    <link href="{{ static('locales/locales.ini') }}" rel="prefetch" type="application/l10n">
+    <script src="{{ static('js/l10n.js') }}"></script>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ static('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="{{ static('css/agency.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ static('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
@@ -142,7 +142,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/how/1.png" alt="">
+                                <img class="img-circle img-responsive" src="{{ static('img/how/1.png') }}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -156,7 +156,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/how/2.png" alt="">
+                                <img class="img-circle img-responsive" src="{{ static('img/how/2.png') }}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -170,7 +170,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/how/3.png" alt="">
+                                <img class="img-circle img-responsive" src="{{ static('img/how/3.png') }}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -184,7 +184,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/how/4.png" alt="">
+                                <img class="img-circle img-responsive" src="{{ static('img/how/4.png') }}" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -218,21 +218,21 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <img src="img/more/1.jpg" class="img-responsive" alt="">
+                    <img src="{{ static('img/more/1.jpg') }}" class="img-responsive" alt="">
                     <div class="portfolio-caption">
                         <h4 data-l10n-id="qa">Quality checks</h4>
                         <p class="text-muted" data-l10n-id="qa-desc">Translations are automatically reviewed for quality before saving</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <img src="img/more/2.jpg" class="img-responsive" alt="">
+                    <img src="{{ static('img/more/2.jpg') }}" class="img-responsive" alt="">
                     <div class="portfolio-caption">
                         <h4 data-l10n-id="helpers">Translation helpers</h4>
                         <p class="text-muted" data-l10n-id="helpers-desc">Get help from translation memory, machine translation and the likes</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <img src="img/more/3.jpg" class="img-responsive" alt="">
+                    <img src="{{ static('img/more/3.jpg') }}" class="img-responsive" alt="">
                     <div class="portfolio-caption">
                         <h4 data-l10n-id="plurals">Plurals support</h4>
                         <p class="text-muted" data-l10n-id="plurals-desc">Strings with plurals can be translated to all plural forms available in your languge</p>
@@ -254,7 +254,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/developers/1.png" class="img-responsive img-circle" alt="">
+                        <img src="{{ static('img/developers/1.png') }}" class="img-responsive img-circle" alt="">
                         <h4 data-l10n-id="implement">Enable it on your site</h4>
                         <p class="text-muted" data-l10n-id="implement-desc">Add a script and you are halfway through</p>
                         <ul class="list-inline social-buttons">
@@ -265,7 +265,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/developers/2.png" class="img-responsive img-circle" alt="">
+                        <img src="{{ static('img/developers/2.png') }}" class="img-responsive img-circle" alt="">
                         <h4 data-l10n-id="github">Hack it on Github</h4>
                         <p class="text-muted" data-l10n-id="github-desc">It's completely free and open source</p>
                         <ul class="list-inline social-buttons">
@@ -276,7 +276,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/developers/3.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{{ static('img/developers/3.jpg') }}" class="img-responsive img-circle" alt="">
                         <h4 data-l10n-id="by-mozilla">By someone you trust</h4>
                         <p class="text-muted" data-l10n-id="by-mozilla-desc">Developed by the non-profit behind Firefox</p>
                         <ul class="list-inline social-buttons">
@@ -317,20 +317,20 @@
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    <script src="{{ static('js/jquery-1.11.0.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ static('js/bootstrap.min.js') }}"></script>
 
     <!-- Enable localization with Pontoon -->
-    <script src="//localhost:8000/pontoon.js"></script>
+    <script src="{{ settings.SITE_URL }}/pontoon.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="{{ static('js/cbpAnimatedHeader.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <script src="{{ static('js/agency.js') }}"></script>
 
 </body>
 
