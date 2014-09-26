@@ -876,12 +876,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #FD5F60;
+    background: #FED271;
 }
 
 ::selection {
     text-shadow: none;
-    background: #FD5F60;
+    background: #FED271;
 }
 
 img::selection {
@@ -893,5 +893,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #FD5F60;
+    webkit-tap-highlight-color: #FED271;
 }
