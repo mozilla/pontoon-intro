@@ -6,7 +6,8 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "PT Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
 }
 
 .text-muted {
@@ -18,7 +19,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.75;
 }
 
@@ -51,8 +52,12 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 .img-centered {
@@ -70,7 +75,7 @@ h6 {
 .btn-primary {
     border-color: #FD5F60;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: #FD5F60;
@@ -121,8 +126,8 @@ fieldset[disabled] .btn-primary.active {
     border-color: #FD5F60;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
     background-color: #FD5F60;
@@ -204,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -239,7 +244,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 1.6em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -283,7 +288,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -297,22 +302,22 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-size: 40px;
+        font-size: 44px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 44px;
     }
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        font-size: 65px;
-        line-height: 65px;
+        font-size: 70px;
+        line-height: 70px;
     }
 }
 
 @media(min-width:992px) {
     header .intro-text .intro-heading {
-        font-size: 75px;
-        line-height: 75px;
+        font-size: 85px;
+        line-height: 85px;
     }
 }
 
@@ -323,13 +328,13 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 44px;
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
 }
@@ -410,7 +415,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
 }
 
@@ -495,7 +500,7 @@ section h3.section-subheading {
 
 .timeline>li .timeline-image h4 {
     margin-top: 26px;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 14px;
 }
 
@@ -563,7 +568,7 @@ section h3.section-subheading {
 
     .timeline>li .timeline-image h4 {
         margin-top: 34px;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 18px;
     }
 
@@ -591,7 +596,7 @@ section h3.section-subheading {
 
     .timeline>li .timeline-image h4 {
         margin-top: 55px;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 26px;
     }
 
@@ -687,72 +692,8 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color: #3F4752;
-    background-image: url(../img/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-section#contact .section-heading {
-    color: #fff;
-}
-
-section#contact .form-group {
-    margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-    height: 236px;
-}
-
-section#contact .form-control:focus {
-    border-color: #FD5F60;
-    box-shadow: none;
-}
-
-section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #bbb;
-}
-
-section#contact .text-danger {
-    color: #e74c3c;
-}
-
 footer {
+    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     padding: 25px 0;
     text-align: center;
 }
@@ -760,7 +701,6 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
@@ -768,7 +708,6 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
