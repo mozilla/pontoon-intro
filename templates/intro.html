@@ -8,13 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Pontoon Intro">
     <meta name="author" content="Mozilla">
+    <meta name="default_locale" content="en-US">
+    <meta name="locales" content="af,ak,an,ar,as,ast,az,be,bg,bn-BD,bn-IN,br,bs,ca,cs,csb,cy,da,de,dsb,el,en-GB,en-US,en-ZA,eo,es,es-AR,es-CL,es-ES,es-MX,et,eu,fa,ff,fi,fr,fur,fy,fy-NL,ga,ga-IE,gd,gl,gu-IN,he,hi-IN,hr,hsb,ht,hu,hy-AM,id,ilo,is,it,ja,ka,kk,km,kn,ko,ku,lij,lt,lv,mai,mk,ml,mn,mr,ms,my,nb-NO,ne-NP,nl,nn-NO,nso,oc,or,pa,pa-IN,pl,pt,pt-BR,pt-PT,rm,ro,ru,si,sk,sl,son,sq,sr,sv-SE,sw,ta,ta-LK,te,th,tr,uk,ur,vi,wo,xh,zh-CN,zh-TW,zu">
 
     <title data-l10n-id="title">Pontoon Intro</title>
     <base target="_parent" />
 
     <!-- Enable internationalization with l10n.js -->
-    <link href="{{ static('locales/locales.ini') }}" rel="prefetch" type="application/l10n">
     <script src="{{ static('js/l10n.js') }}"></script>
+
+    <script src="https://raw.githubusercontent.com/mozilla-b2g/gaia/master/shared/js/l10n.js"></script>
+    <link href="{{ static('locales/{locale}/messages.properties') }}" rel="localization">
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ static('css/bootstrap.min.css') }}" rel="stylesheet">
