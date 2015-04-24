@@ -16,7 +16,7 @@
 
     <!-- Enable internationalization with l10n.js -->
     <script src="{{ static('js/l10n.js') }}"></script>
-    <link href="{{ static('locales/{locale}/messages.properties') }}" rel="localization">
+    <link href="{{ settings.STATIC_URL + 'locales/{locale}/messages.properties' }}" rel="localization">
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ static('css/bootstrap.min.css') }}" rel="stylesheet">
