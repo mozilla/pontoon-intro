@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "PT Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
 }
 
@@ -52,7 +52,6 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -75,7 +74,6 @@ h4 {
 .btn-primary {
     border-color: #FD5F60;
     text-transform: uppercase;
-    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: #FD5F60;
@@ -126,7 +124,6 @@ fieldset[disabled] .btn-primary.active {
     border-color: #FD5F60;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
@@ -180,6 +177,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     color: #FFFFFF;
+    font-weight: 100;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -209,8 +207,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: 1px;
     color: #fff;
 }
@@ -235,19 +232,13 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 10px 0;
         border: 0;
         background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
     }
 
     .navbar-default .navbar-brand {
         font-size: 1.6em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -255,42 +246,43 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
         background-color: #3F4752;
-    }
-
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
     }
 }
 
 header {
     text-align: center;
     color: #fff;
-    background-color: #3F4752;
-    background-image: url(../img/map-image.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: #3F4752;
+}
+
+header .wrapper img {
+    position: absolute;
+    margin: 0 auto;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-size: 22px;
-    font-style: italic;
+    font-weight: 100;
     line-height: 22px;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 50px;
 }
 
@@ -303,7 +295,6 @@ header .intro-text .intro-heading {
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-size: 44px;
-        font-style: italic;
         line-height: 44px;
     }
 
@@ -335,14 +326,26 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 @media(min-width:768px) {
     section {
         padding: 150px 0;
     }
+}
+
+.icon-wrap {
+    background: #fd5f60;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding-top: 20px;
+}
+
+.icon-wrap.expand {
+    padding-top: 30px;
 }
 
 .service-heading {
@@ -416,7 +419,6 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-size: 17px;
-    font-style: italic;
 }
 
 #portfolio * {
@@ -648,13 +650,10 @@ section h3.section-subheading {
     text-align: center;
 }
 
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #F1F1F1;
-}
-
-.team-member img {
+.team-member > img {
     background: #F1F1F1;
+    border: 7px solid #F1F1F1;
+    margin: 0 auto;
 }
 
 .team-member h4 {
@@ -683,12 +682,6 @@ section h3.section-subheading {
     background-color: #4FC4F6;
 }
 
-.team-member ul.social-buttons li a.mozilla {
-    background-image: url("../img/mozilla-dino.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .team-member ul.social-buttons li a i {
     color: #111111;
 }
@@ -698,7 +691,7 @@ aside.clients img {
 }
 
 footer {
-    font-family: Rajdhani,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
     padding: 25px 0;
     text-align: center;
 }
@@ -741,6 +734,10 @@ ul.social-buttons li a:active {
     background-color: #FD5F60;
 }
 
+ul.social-buttons li a img {
+    margin-top: -2px;
+}
+
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -771,7 +768,6 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-size: 16px;
-    font-style: italic;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
